@@ -1,0 +1,632 @@
+[11240] 26 Jul 11:13:07.435 # Windows does not support daemonize. Start Redis as service
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.100 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in sentinel mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 26380
+ |    `-._   `._    /     _.-'    |     PID: 11240
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[11240] 26 Jul 11:13:07.439 # Sentinel ID is dd07b068c448c6e43d4846e5e530263fe2891115
+[11240] 26 Jul 11:13:07.439 # +monitor master mymaster 127.0.0.1 6380 quorum 1
+[11240] 26 Jul 11:13:07.440 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[11240] 26 Jul 11:13:07.441 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:17:21.796 # Windows does not support daemonize. Start Redis as service
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.100 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in sentinel mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 26380
+ |    `-._   `._    /     _.-'    |     PID: 9492
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[9492] 26 Jul 11:17:21.801 # Sentinel ID is dd07b068c448c6e43d4846e5e530263fe2891115
+[9492] 26 Jul 11:17:21.801 # +monitor master mymaster 127.0.0.1 6380 quorum 1
+[9492] 26 Jul 11:20:27.690 # +sdown master mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:27.690 # +odown master mymaster 127.0.0.1 6380 #quorum 1/1
+[9492] 26 Jul 11:20:27.690 # +new-epoch 1
+[9492] 26 Jul 11:20:27.690 # +try-failover master mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:27.693 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 1
+[9492] 26 Jul 11:20:27.693 # +elected-leader master mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:27.693 # +failover-state-select-slave master mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:27.777 # +selected-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:27.777 * +failover-state-send-slaveof-noone slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:27.848 * +failover-state-wait-promotion slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:28.746 # +promoted-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:28.746 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:28.789 * +slave-reconf-sent slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:29.790 * +slave-reconf-inprog slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:29.790 * +slave-reconf-done slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:29.841 # +failover-end master mymaster 127.0.0.1 6380
+[9492] 26 Jul 11:20:29.841 # +switch-master mymaster 127.0.0.1 6380 127.0.0.1 6381
+[9492] 26 Jul 11:20:29.841 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 11:20:29.841 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 11:20:34.876 # +sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 11:21:00.189 # -sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 11:21:10.177 * +convert-to-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 11:27:15.580 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:07.063 # +sdown master mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:07.063 # +odown master mymaster 127.0.0.1 6381 #quorum 1/1
+[9492] 26 Jul 13:50:07.063 # +new-epoch 2
+[9492] 26 Jul 13:50:07.063 # +try-failover master mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:07.065 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 2
+[9492] 26 Jul 13:50:07.065 # +elected-leader master mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:07.065 # +failover-state-select-slave master mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:07.128 # +selected-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:07.128 * +failover-state-send-slaveof-noone slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:07.180 * +failover-state-wait-promotion slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:08.104 # +promoted-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:08.104 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:08.194 * +slave-reconf-sent slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:08.194 # +failover-end master mymaster 127.0.0.1 6381
+[9492] 26 Jul 13:50:08.194 # +switch-master mymaster 127.0.0.1 6381 127.0.0.1 6380
+[9492] 26 Jul 13:50:08.194 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:50:08.194 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:50:13.237 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:50:13.237 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:52:39.334 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:52:49.285 * +convert-to-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:52:54.401 # -sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:53:14.428 * +fix-slave-config slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:55:35.003 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:56:00.673 * +reboot slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:56:00.688 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:58:00.881 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:58:10.934 * +reboot slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:58:11.023 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:03.753 # +sdown master mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:03.753 # +odown master mymaster 127.0.0.1 6380 #quorum 1/1
+[9492] 26 Jul 13:59:03.753 # +new-epoch 3
+[9492] 26 Jul 13:59:03.753 # +try-failover master mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:03.754 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 3
+[9492] 26 Jul 13:59:03.754 # +elected-leader master mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:03.754 # +failover-state-select-slave master mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:03.820 # +selected-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:03.820 * +failover-state-send-slaveof-noone slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:03.896 * +failover-state-wait-promotion slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:04.785 # +promoted-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:04.785 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:04.850 * +slave-reconf-sent slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:05.854 * +slave-reconf-inprog slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:06.914 * +slave-reconf-done slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:07.002 # +failover-end master mymaster 127.0.0.1 6380
+[9492] 26 Jul 13:59:07.002 # +switch-master mymaster 127.0.0.1 6380 127.0.0.1 6382
+[9492] 26 Jul 13:59:07.002 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 13:59:07.002 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 13:59:12.054 # +sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 13:59:22.278 # -sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 13:59:32.233 * +convert-to-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:29.751 # +sdown master mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:29.751 # +odown master mymaster 127.0.0.1 6382 #quorum 1/1
+[9492] 26 Jul 14:27:29.751 # +new-epoch 4
+[9492] 26 Jul 14:27:29.751 # +try-failover master mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:29.754 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 4
+[9492] 26 Jul 14:27:29.754 # +elected-leader master mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:29.754 # +failover-state-select-slave master mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:29.826 # +selected-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:29.826 * +failover-state-send-slaveof-noone slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:29.884 * +failover-state-wait-promotion slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:30.823 # +promoted-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:30.823 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:30.887 * +slave-reconf-sent slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:31.065 * +slave-reconf-inprog slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:32.156 * +slave-reconf-done slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:32.221 # +failover-end master mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:27:32.221 # +switch-master mymaster 127.0.0.1 6382 127.0.0.1 6381
+[9492] 26 Jul 14:27:32.221 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:27:32.221 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:27:37.268 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:28:32.731 # -sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:28:42.701 * +convert-to-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:17.617 # +sdown master mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:17.617 # +odown master mymaster 127.0.0.1 6381 #quorum 1/1
+[9492] 26 Jul 14:32:17.617 # +new-epoch 5
+[9492] 26 Jul 14:32:17.617 # +try-failover master mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:17.621 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 5
+[9492] 26 Jul 14:32:17.621 # +elected-leader master mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:17.621 # +failover-state-select-slave master mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:17.687 # +selected-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:17.687 * +failover-state-send-slaveof-noone slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:17.739 * +failover-state-wait-promotion slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:18.676 # +promoted-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:18.676 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:18.736 * +slave-reconf-sent slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:19.719 * +slave-reconf-inprog slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:20.764 * +slave-reconf-done slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:20.822 # +failover-end master mymaster 127.0.0.1 6381
+[9492] 26 Jul 14:32:20.822 # +switch-master mymaster 127.0.0.1 6381 127.0.0.1 6382
+[9492] 26 Jul 14:32:20.822 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:32:20.822 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:32:25.879 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:35:37.358 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9492] 26 Jul 14:35:47.300 * +convert-to-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:08.401 # Windows does not support daemonize. Start Redis as service
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.100 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in sentinel mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 26380
+ |    `-._   `._    /     _.-'    |     PID: 12616
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[12616] 26 Jul 15:44:08.404 # Sentinel ID is dd07b068c448c6e43d4846e5e530263fe2891115
+[12616] 26 Jul 15:44:08.404 # +monitor master mymaster 127.0.0.1 6382 quorum 1
+[12616] 26 Jul 15:44:08.407 * +slave slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:40.022 # +sdown master mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:40.022 # +odown master mymaster 127.0.0.1 6382 #quorum 1/1
+[12616] 26 Jul 15:44:40.022 # +new-epoch 6
+[12616] 26 Jul 15:44:40.022 # +try-failover master mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:40.022 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 6
+[12616] 26 Jul 15:44:40.022 # +elected-leader master mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:40.022 # +failover-state-select-slave master mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:40.093 # +selected-slave slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:40.093 * +failover-state-send-slaveof-noone slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:40.184 * +failover-state-wait-promotion slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:40.524 # +sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:41.071 # +promoted-slave slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:41.071 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:41.127 * +slave-reconf-sent slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:41.542 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:41.626 # +failover-end master mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:44:41.626 # +switch-master mymaster 127.0.0.1 6382 127.0.0.1 6379
+[12616] 26 Jul 15:44:41.626 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:44:41.626 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:44:41.626 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:44:46.645 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:44:46.645 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:44:46.645 # +sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:45:11.987 # -sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:45:11.987 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:45:25.549 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:45:31.986 * +fix-slave-config slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:46:05.888 * +reboot slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:46:05.888 * +convert-to-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:46:05.953 # -sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:46:17.088 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:46:39.865 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:46:50.479 # +sdown master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:46:50.479 # +odown master mymaster 127.0.0.1 6379 #quorum 1/1
+[12616] 26 Jul 15:46:50.479 # +new-epoch 7
+[12616] 26 Jul 15:46:50.479 # +try-failover master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:46:50.480 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 7
+[12616] 26 Jul 15:46:50.480 # +elected-leader master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:46:50.480 # +failover-state-select-slave master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:46:50.570 # -failover-abort-no-good-slave master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:46:50.642 # Next failover delay: I will not start a failover before Thu Jul 26 15:47:26 2018
+[12616] 26 Jul 15:47:00.169 # -sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:20.153 * +reboot slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:20.242 # -sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:26.912 # +new-epoch 8
+[12616] 26 Jul 15:47:26.912 # +try-failover master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:26.914 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 8
+[12616] 26 Jul 15:47:26.914 # +elected-leader master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:26.914 # +failover-state-select-slave master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:26.976 # +selected-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:26.976 * +failover-state-send-slaveof-noone slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:27.043 * +failover-state-wait-promotion slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:27.468 # +promoted-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:27.468 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:27.517 * +slave-reconf-sent slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:30.816 * +reboot master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:30.915 # -sdown master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:30.915 # -odown master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:31.183 * +fix-slave-config slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:45.473 # +failover-end-for-timeout master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:45.473 # +failover-end master mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:45.473 * +slave-reconf-sent-be slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:45.473 * +slave-reconf-sent-be slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6379
+[12616] 26 Jul 15:47:45.473 # +switch-master mymaster 127.0.0.1 6379 127.0.0.1 6382
+[12616] 26 Jul 15:47:45.474 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:47:45.474 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:47:45.474 * +slave slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:47:50.493 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:47:55.631 * +convert-to-slave slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6382
+[12616] 26 Jul 15:48:01.033 # +sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:52:07.662 # Windows does not support daemonize. Start Redis as service
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.100 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in sentinel mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 26380
+ |    `-._   `._    /     _.-'    |     PID: 9276
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[9276] 26 Jul 15:52:07.665 # Sentinel ID is dd07b068c448c6e43d4846e5e530263fe2891115
+[9276] 26 Jul 15:52:07.665 # +monitor master mymaster 127.0.0.1 6382 quorum 1
+[9276] 26 Jul 15:52:12.676 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:52:12.676 # +sdown slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:52:17.676 * +convert-to-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:54:26.249 # +sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:54:51.373 * +reboot slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:54:51.431 # -sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:04.405 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:25.870 # +sdown master mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:25.870 # +odown master mymaster 127.0.0.1 6382 #quorum 1/1
+[9276] 26 Jul 15:56:25.870 # +new-epoch 9
+[9276] 26 Jul 15:56:25.870 # +try-failover master mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:25.873 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 9
+[9276] 26 Jul 15:56:25.873 # +elected-leader master mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:25.873 # +failover-state-select-slave master mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:25.950 # +selected-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:25.950 * +failover-state-send-slaveof-noone slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:26.033 * +failover-state-wait-promotion slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:26.934 # +promoted-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:26.934 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:27.005 * +slave-reconf-sent slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:44.970 # +failover-end-for-timeout master mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:44.970 # +failover-end master mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:44.970 * +slave-reconf-sent-be slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:44.970 * +slave-reconf-sent-be slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[9276] 26 Jul 15:56:44.970 # +switch-master mymaster 127.0.0.1 6382 127.0.0.1 6381
+[9276] 26 Jul 15:56:44.971 * +slave slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6381
+[9276] 26 Jul 15:56:44.971 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9276] 26 Jul 15:56:44.971 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9276] 26 Jul 15:56:49.976 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9276] 26 Jul 15:56:49.976 # +sdown slave 127.0.0.1:6379 127.0.0.1 6379 @ mymaster 127.0.0.1 6381
+[9276] 26 Jul 15:57:05.105 * +fix-slave-config slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9276] 26 Jul 15:57:45.607 # -sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9276] 26 Jul 15:57:55.536 * +convert-to-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:01:44.517 # +sdown master mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:01:44.517 # +odown master mymaster 127.0.0.1 6381 #quorum 1/1
+[9276] 26 Jul 16:01:44.517 # +new-epoch 10
+[9276] 26 Jul 16:01:44.517 # +try-failover master mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:01:44.520 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 10
+[9276] 26 Jul 16:01:44.520 # +elected-leader master mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:01:44.520 # +failover-state-select-slave master mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:01:44.579 # -failover-abort-no-good-slave master mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:01:44.638 # Next failover delay: I will not start a failover before Thu Jul 26 16:02:21 2018
+[9276] 26 Jul 16:01:45.052 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:01:45.052 # +sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:02:21.204 # +new-epoch 11
+[9276] 26 Jul 16:02:21.204 # +try-failover master mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:02:21.207 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 11
+[9276] 26 Jul 16:02:21.207 # +elected-leader master mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:02:21.207 # +failover-state-select-slave master mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:02:21.274 # -failover-abort-no-good-slave master mymaster 127.0.0.1 6381
+[9276] 26 Jul 16:02:21.351 # Next failover delay: I will not start a failover before Thu Jul 26 16:02:58 2018
+[13716] 26 Jul 16:04:00.275 # Windows does not support daemonize. Start Redis as service
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.100 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in sentinel mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 26380
+ |    `-._   `._    /     _.-'    |     PID: 13716
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[13716] 26 Jul 16:04:00.277 # Sentinel ID is dd07b068c448c6e43d4846e5e530263fe2891115
+[13716] 26 Jul 16:04:00.277 # +monitor master mymaster 127.0.0.1 6381 quorum 1
+[13716] 26 Jul 16:04:16.814 # +sdown master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:16.814 # +odown master mymaster 127.0.0.1 6381 #quorum 1/1
+[13716] 26 Jul 16:04:16.814 # +new-epoch 12
+[13716] 26 Jul 16:04:16.814 # +try-failover master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:16.817 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 12
+[13716] 26 Jul 16:04:16.817 # +elected-leader master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:16.817 # +failover-state-select-slave master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:16.917 # +selected-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:16.917 * +failover-state-send-slaveof-noone slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:16.994 * +failover-state-wait-promotion slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:17.851 # +promoted-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:17.851 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:17.902 * +slave-reconf-sent slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:18.896 * +slave-reconf-inprog slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:18.896 * +slave-reconf-done slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:18.980 # +failover-end master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:04:18.980 # +switch-master mymaster 127.0.0.1 6381 127.0.0.1 6382
+[13716] 26 Jul 16:04:18.980 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:04:18.980 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:04:24.034 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:04:49.319 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:04:59.236 * +convert-to-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:12.411 # +sdown master mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:12.411 # +odown master mymaster 127.0.0.1 6382 #quorum 1/1
+[13716] 26 Jul 16:05:12.411 # +new-epoch 13
+[13716] 26 Jul 16:05:12.411 # +try-failover master mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:12.411 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 13
+[13716] 26 Jul 16:05:12.411 # +elected-leader master mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:12.411 # +failover-state-select-slave master mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:12.470 # +selected-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:12.470 * +failover-state-send-slaveof-noone slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:12.541 * +failover-state-wait-promotion slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:13.496 # +promoted-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:13.496 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:13.559 * +slave-reconf-sent slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:14.524 * +slave-reconf-inprog slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:15.528 * +slave-reconf-done slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:15.585 # +failover-end master mymaster 127.0.0.1 6382
+[13716] 26 Jul 16:05:15.585 # +switch-master mymaster 127.0.0.1 6382 127.0.0.1 6381
+[13716] 26 Jul 16:05:15.585 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:15.585 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:20.635 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:28.608 # +sdown master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:28.608 # +odown master mymaster 127.0.0.1 6381 #quorum 1/1
+[13716] 26 Jul 16:05:28.608 # +new-epoch 14
+[13716] 26 Jul 16:05:28.608 # +try-failover master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:28.610 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 14
+[13716] 26 Jul 16:05:28.611 # +elected-leader master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:28.611 # +failover-state-select-slave master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:28.673 # +selected-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:28.673 * +failover-state-send-slaveof-noone slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:28.725 * +failover-state-wait-promotion slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:29.658 # +promoted-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:29.658 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:29.712 * +slave-reconf-sent slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:29.712 # +failover-end master mymaster 127.0.0.1 6381
+[13716] 26 Jul 16:05:29.712 # +switch-master mymaster 127.0.0.1 6381 127.0.0.1 6380
+[13716] 26 Jul 16:05:29.712 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[13716] 26 Jul 16:05:29.712 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[13716] 26 Jul 16:05:34.779 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[13716] 26 Jul 16:05:34.779 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[13716] 26 Jul 16:05:45.026 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[13716] 26 Jul 16:05:45.026 # -sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[13716] 26 Jul 16:05:54.950 * +convert-to-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[13716] 26 Jul 16:05:54.951 * +convert-to-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[13584] 26 Jul 16:30:22.347 # Windows does not support daemonize. Start Redis as service
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.100 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in sentinel mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 26380
+ |    `-._   `._    /     _.-'    |     PID: 13584
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[13584] 26 Jul 16:30:22.350 # Sentinel ID is dd07b068c448c6e43d4846e5e530263fe2891115
+[13584] 26 Jul 16:30:22.350 # +monitor master mymaster 127.0.0.1 6380 quorum 1
+[12876] 26 Jul 17:18:07.541 # Windows does not support daemonize. Start Redis as service
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.100 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in sentinel mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 26380
+ |    `-._   `._    /     _.-'    |     PID: 12876
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[12876] 26 Jul 17:18:07.543 # Sentinel ID is dd07b068c448c6e43d4846e5e530263fe2891115
+[12876] 26 Jul 17:18:07.543 # +monitor master mymaster 127.0.0.1 6380 quorum 1
+[16284] 31 Jul 14:22:48.877 # Windows does not support daemonize. Start Redis as service
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.100 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in sentinel mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 26380
+ |    `-._   `._    /     _.-'    |     PID: 16284
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[16284] 31 Jul 14:22:48.893 # Sentinel ID is dd07b068c448c6e43d4846e5e530263fe2891115
+[16284] 31 Jul 14:22:48.893 # +monitor master mymaster 127.0.0.1 6380 quorum 1
+[16284] 31 Jul 14:25:14.858 # +sdown master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:14.858 # +odown master mymaster 127.0.0.1 6380 #quorum 1/1
+[16284] 31 Jul 14:25:14.858 # +new-epoch 15
+[16284] 31 Jul 14:25:14.858 # +try-failover master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:14.860 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 15
+[16284] 31 Jul 14:25:14.860 # +elected-leader master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:14.860 # +failover-state-select-slave master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:14.960 # +selected-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:14.960 * +failover-state-send-slaveof-noone slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:15.027 * +failover-state-wait-promotion slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:15.902 # +promoted-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:15.902 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:15.964 * +slave-reconf-sent slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:16.959 * +slave-reconf-inprog slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:16.959 * +slave-reconf-done slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:17.011 # +failover-end master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:25:17.011 # +switch-master mymaster 127.0.0.1 6380 127.0.0.1 6382
+[16284] 31 Jul 14:25:17.011 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:25:17.011 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:25:22.027 # +sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:17.597 # -sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:27.607 * +convert-to-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:47.712 # +sdown master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:47.712 # +odown master mymaster 127.0.0.1 6382 #quorum 1/1
+[16284] 31 Jul 14:26:47.712 # +new-epoch 16
+[16284] 31 Jul 14:26:47.712 # +try-failover master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:47.713 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 16
+[16284] 31 Jul 14:26:47.713 # +elected-leader master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:47.713 # +failover-state-select-slave master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:47.803 # +selected-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:47.803 * +failover-state-send-slaveof-noone slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:47.903 * +failover-state-wait-promotion slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:48.723 # +promoted-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:48.723 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:48.798 * +slave-reconf-sent slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:49.559 * +slave-reconf-inprog slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:50.576 * +slave-reconf-done slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:50.647 # +failover-end master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:26:50.647 # +switch-master mymaster 127.0.0.1 6382 127.0.0.1 6380
+[16284] 31 Jul 14:26:50.647 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:26:50.647 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:26:55.651 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:27:51.214 # -sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:28:01.174 * +convert-to-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:01.000 # +sdown master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:01.000 # +odown master mymaster 127.0.0.1 6380 #quorum 1/1
+[16284] 31 Jul 14:29:01.000 # +new-epoch 17
+[16284] 31 Jul 14:29:01.000 # +try-failover master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:01.002 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 17
+[16284] 31 Jul 14:29:01.002 # +elected-leader master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:01.002 # +failover-state-select-slave master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:01.102 # +selected-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:01.102 * +failover-state-send-slaveof-noone slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:01.179 * +failover-state-wait-promotion slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:02.014 # +promoted-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:02.014 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:02.066 * +slave-reconf-sent slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:03.030 * +slave-reconf-inprog slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:03.030 * +slave-reconf-done slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:03.107 # +failover-end master mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:29:03.107 # +switch-master mymaster 127.0.0.1 6380 127.0.0.1 6382
+[16284] 31 Jul 14:29:03.107 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:03.107 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:08.122 # +sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:11.556 # +sdown master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:11.556 # +odown master mymaster 127.0.0.1 6382 #quorum 1/1
+[16284] 31 Jul 14:29:11.556 # +new-epoch 18
+[16284] 31 Jul 14:29:11.556 # +try-failover master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:11.557 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 18
+[16284] 31 Jul 14:29:11.557 # +elected-leader master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:11.557 # +failover-state-select-slave master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:11.633 # +selected-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:11.633 * +failover-state-send-slaveof-noone slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:11.700 * +failover-state-wait-promotion slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:12.568 # +promoted-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:12.568 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:12.636 * +slave-reconf-sent slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:12.636 # +failover-end master mymaster 127.0.0.1 6382
+[16284] 31 Jul 14:29:12.636 # +switch-master mymaster 127.0.0.1 6382 127.0.0.1 6381
+[16284] 31 Jul 14:29:12.636 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:29:12.636 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:29:17.692 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:29:17.692 # +sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:29:43.137 # -sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:29:53.073 * +convert-to-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:02.176 # +sdown master mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:02.176 # +odown master mymaster 127.0.0.1 6381 #quorum 1/1
+[16284] 31 Jul 14:30:02.176 # +new-epoch 19
+[16284] 31 Jul 14:30:02.176 # +try-failover master mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:02.178 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 19
+[16284] 31 Jul 14:30:02.178 # +elected-leader master mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:02.178 # +failover-state-select-slave master mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:02.279 # +selected-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:02.279 * +failover-state-send-slaveof-noone slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:02.335 * +failover-state-wait-promotion slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:03.204 # +promoted-slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:03.204 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:03.303 * +slave-reconf-sent slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:03.303 # +failover-end master mymaster 127.0.0.1 6381
+[16284] 31 Jul 14:30:03.303 # +switch-master mymaster 127.0.0.1 6381 127.0.0.1 6380
+[16284] 31 Jul 14:30:03.303 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:30:03.303 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:30:08.376 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:30:08.376 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:30:48.765 # -sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:30:48.845 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:30:58.678 * +convert-to-slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:30:58.835 * +convert-to-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:31:04.212 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:31:40.121 * +reboot slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:31:40.121 * +convert-to-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:31:40.222 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:46:40.159 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:48:50.105 * +reboot slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[16284] 31 Jul 14:48:50.156 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:13.748 # Windows does not support daemonize. Start Redis as service
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.100 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in sentinel mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 26380
+ |    `-._   `._    /     _.-'    |     PID: 15528
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[15528] 01 Aug 18:41:13.760 # Sentinel ID is dd07b068c448c6e43d4846e5e530263fe2891115
+[15528] 01 Aug 18:41:13.760 # +monitor master mymaster 127.0.0.1 6380 quorum 1
+[15528] 01 Aug 18:41:18.762 # +sdown master mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:18.762 # +odown master mymaster 127.0.0.1 6380 #quorum 1/1
+[15528] 01 Aug 18:41:18.762 # +new-epoch 20
+[15528] 01 Aug 18:41:18.762 # +try-failover master mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:18.764 # +vote-for-leader dd07b068c448c6e43d4846e5e530263fe2891115 20
+[15528] 01 Aug 18:41:18.764 # +elected-leader master mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:18.764 # +failover-state-select-slave master mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:18.822 # +selected-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:18.822 * +failover-state-send-slaveof-noone slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:18.906 * +failover-state-wait-promotion slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:19.797 # +promoted-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:19.797 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:19.873 * +slave-reconf-sent slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:20.817 * +slave-reconf-inprog slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:21.830 * +slave-reconf-done slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:21.880 # +failover-end master mymaster 127.0.0.1 6380
+[15528] 01 Aug 18:41:21.880 # +switch-master mymaster 127.0.0.1 6380 127.0.0.1 6381
+[15528] 01 Aug 18:41:21.881 * +slave slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
+[15528] 01 Aug 18:41:21.881 * +slave slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[15528] 01 Aug 18:41:26.947 # +sdown slave 127.0.0.1:6380 127.0.0.1 6380 @ mymaster 127.0.0.1 6381
+[15528] 01 Aug 18:56:05.196 # +sdown slave 127.0.0.1:6382 127.0.0.1 6382 @ mymaster 127.0.0.1 6381
