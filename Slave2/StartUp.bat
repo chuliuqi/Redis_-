@@ -1,0 +1,1 @@
+redis-server.exe redis.slave2.conf
